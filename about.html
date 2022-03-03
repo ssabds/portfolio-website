@@ -5,13 +5,19 @@
   <meta charset="utf-8" />
   <meta name="author" content="Selwa Abd" />
   <meta name="description" content="Portfolio" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Selwa Abd UX/UI Design Portfolio</title>
 </head>
 
 <body>
   <header>
-    <div class="">
-      <img src="./img/logo.svg" alt="Selwa Abd" />
+    <div class="container">
+      <img src="./img/logo3.svg" alt="Selwa Abd" />
 
       <nav>
         <ul>
@@ -30,16 +36,17 @@
     </div>
     <div>
       <div>
+
         <picture>
           <img src="./img/profile@1px.jpg" alt="Selwa Abd">
         </picture>
         <div>
-          <div>
+          <div  id="hero">
             <h2>Hi!</h2>
             <p>I’m Selwa Abd. I'm a UX/UI designer / creative director based in Brooklyn, NY.</p>
             <p>I have a BFA in Communication Design from Parsons The New School. Intuition leads my design practice. I'm focused on community based projects and love minimalism. </p>
           </div>
-          <div>
+          <div id="work">
             <h2>Skills & Tools</h2>
             <div>
               <div>
@@ -79,33 +86,31 @@
       or email:
     </p>
     <div class="">
-      <a href="info.bergsonist@gmaill.com">Email Me</a>
-    </div>
-    <div class="">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/selwaabd/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-              <path
-                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+        <a href="info.bergsonist@gmaill.com" class="button contact">Send me an email</a>
+        </div>
+        <div class="">
+
+          <a href="https://www.linkedin.com/in/selwaabd/" class="social" target="_blank">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="7" fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.429 14.969H19.143V16.819C19.678 15.755 21.05 14.799 23.111 14.799C27.062 14.799 28 16.917 28 20.803V28H24V21.688C24 19.475 23.465 18.227 22.103 18.227C20.214 18.227 19.429 19.572 19.429 21.687V28H15.429V14.969V14.969ZM8.57 27.83H12.57V14.799H8.57V27.83V27.83ZM13.143 10.55C13.1431 10.8853 13.0767 11.2172 12.9474 11.5266C12.8181 11.8359 12.6287 12.1165 12.39 12.352C11.9064 12.8326 11.2518 13.1017 10.57 13.1C9.88939 13.0995 9.23631 12.8312 8.752 12.353C8.51421 12.1167 8.32539 11.8358 8.19634 11.5264C8.0673 11.217 8.00058 10.8852 8 10.55C8 9.873 8.27 9.225 8.753 8.747C9.23689 8.26816 9.89024 7.9997 10.571 8C11.253 8 11.907 8.269 12.39 8.747C12.872 9.225 13.143 9.873 13.143 10.55Z"
+                fill="white" />
             </svg>
           </a>
-        </li>
-
-        <li>
-          <a href="https://www.twitter.com/bergsonist" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <a href="https://www.behance.net/selwaabde/" class="social" target="_blank">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="7" fill="black" />
               <path
-                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                d="M21.364 11.9261H26.8537V13.2762H21.364V11.9261ZM15.8633 17.2678C17.0768 16.6792 17.7124 15.7838 17.7124 14.4003C17.7124 11.6639 15.7037 11 13.384 11H7V24.735H13.5629C16.0229 24.735 18.3316 23.5356 18.3316 20.7462C18.3316 19.0223 17.5281 17.7476 15.8633 17.2678V17.2678ZM9.97736 13.3431H12.7704C13.8463 13.3431 14.8121 13.6471 14.8121 14.9135C14.8121 16.0795 14.0609 16.5481 12.996 16.5481H9.97736V13.3431ZM13.1556 22.4031H9.97461V18.6206H13.2189C14.5287 18.6206 15.357 19.1757 15.357 20.5816C15.357 21.9651 14.3691 22.4031 13.1556 22.4031V22.4031ZM29 19.9066C29 16.9637 27.3022 14.5119 24.2313 14.5119C21.2457 14.5119 19.2149 16.7908 19.2149 19.7782C19.2149 22.8745 21.1383 25 24.2313 25C26.573 25 28.0892 23.9317 28.8184 21.6527H26.4437C26.185 22.5035 25.1338 22.9498 24.3166 22.9498C22.7371 22.9498 21.9116 22.0126 21.9116 20.4198H28.9807C28.989 20.2552 29 20.0823 29 19.9066V19.9066ZM21.9116 18.696C21.9969 17.3877 22.8582 16.5704 24.146 16.5704C25.4998 16.5704 26.1767 17.3766 26.2951 18.696H21.9116Z"
+                fill="white" />
             </svg>
           </a>
 
-        </li>
 
-        <div>
-          <p>Copyright Selwa Abd</p>
+          <div>
+            <p>Copyright Selwa Abd</p>
+          </div>
         </div>
     </div>
   </footer>
