@@ -16,81 +16,92 @@
 
 <body>
   <header>
+    <!-- start header section -->
+    <!-- navigation -->
     <div class="container">
-      <img src="./img/logo.svg" alt="Selwa Abd" />
-
+      <img src="./img/logo2.svg" alt="Selwa Abd" />
 
       <nav>
-        <ul>
+        <!-- navigation -->
+        <ul class="navigation">
           <li><a href="about.html">About</a></li>
           <li><a href="index.html">Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
-  </header>
+  </header> <!-- end header section -->
   <main>
-    <div  id="hero">
-      <h1>Hi, I'm Selwa</h1>
-      <p>
-        <span>
-          <h3>
-            I'm a UX/UI designer based in NYC with a background & expertise in
-            creative direction, music & community outreach.
-          </h3>
-        </span>
-      </p>
-    </div>
+    <div id="hero">
+      <!-- start hero section -->
+      <div class="container">
+        <!-- start container holding hero content -->
 
-    <div class="">
-      <h3>Work</h3>
-    </div>
-    <div class="">
-      <!-- i guess this is for the columns--->
-      <div  id="work">
-        <a href="putf.html" target="_blank">
-
-
-          <picture>
-            <source media="(max-width:767px)" srcset="./img/putf/PUTF@2px.jpg" />
-            <source media="(max-width:400px)" srcset="./img/putf/PUTF@1px.jpg" />
-
-            <img src="./img/putf/PUTF@2px.jpg" alt="PUTFlogo" />
-          </picture>
-          <a />
-      </div>
-      <div>
-        <h2>PUTF</h2>
+        <h1>Hi, I'm Selwa</h1>
+        <h2>I'm a UX/UI designer based in NYC</h2>
         <p>
-          PUTF provides an all-in-one platform in which young creatives can
-          find new opportunities tailored to their needs and can apply to
-          them.
+          With a background & expertise in
+          creative direction, music & community outreach.
         </p>
 
-        <a href="putf.html" class="button contact">Read more</a>
+      </div><!-- end container holding hero content -->
+    </div><!-- end hero section -->
 
-      </div>
-      <br>
-      <a href="files/Selwa_Abd_CV.pdf" class="button contact" download>Download my CV</a>
-    </div>
+    <div id="work"><!-- start work/projects section -->
+      <div class="container"><!-- start container -->
+        <h2>Work</h2>
+        <div class="row"><!-- start container that holds project in 2 columns -->
+
+<div class="col-md-6 image"><!-- start first column to hold image -->
+       <!--<a href="putf.html" target="_blank"> -->
+
+            <picture>
+              <source media="(max-width:767px)" srcset="./img/putf/PUTF@2px.jpg" />
+              <source media="(max-width:400px)" srcset="./img/putf/PUTF@1px.jpg" />
+
+              <img src="./img/putf/PUTF@2px.jpg" alt="PUTFlogo" />
+            </picture>
+          </div> <!-- end first column -->
+            <div class="col-md-6 col-lg-5"><!-- start second column to hold text -->
+              <h3>PUTF</h3>
+              <p>
+                PUTF provides an all-in-one platform in which young creatives can
+                find new opportunities tailored to their needs and can apply to
+                them.
+              </p>
+
+
+            <a href="putf.html" class="button contact">Read more</a>
+            </div>
+
+            <br>
+            <a href="files/Selwa_Abd_CV.pdf" class="button contact" download>Download my CV</a>
+        </div><!-- end container that holds project -->
+      </div><!-- end container -->
+    </div><!-- end work/projects section -->
   </main>
 
   <footer id="contact">
-    <h2>Contact</h2>
-    <p>
-      If you want to collaborate call:
-      <a href="21209309430">21209309430</a>
-      or
-    </p>
+    <div class="container">
+
+
+      <h2>Contact</h2>
+      <p>
+        If you want to collaborate call:
+        <a href="21209309430">21209309430</a>
+        or
+      </p>
+    </div>
+
     <br>
 
-<div class="">
-    <a href="info.bergsonist@gmaill.com" class="button contact">Send me an email</a>
+    <div class="centerMe">
+      <a href="info.bergsonist@gmaill.com" class="button contact">Send me an email</a>
     </div>
     <br>
-    <div>
+    <div class="socialmedia">
 
-      <a href="https://www.linkedin.com/in/selwaabd/" class="social" target="_blank">
+      <a class="linkedin"href="https://www.linkedin.com/in/selwaabd/" class="social" target="_blank">
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="36" height="36" rx="7" fill="black" />
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -98,7 +109,7 @@
             fill="white" />
         </svg>
       </a>
-      <a href="https://www.behance.net/selwaabde/" class="social" target="_blank">
+      <a class="behance"href="https://www.behance.net/selwaabde/" class="social" target="_blank">
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="36" height="36" rx="7" fill="black" />
           <path

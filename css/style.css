@@ -1,50 +1,75 @@
 
+* {
+  box-sizing: border-box;
+}
+
 
 body{
 background-color: white;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.8;
   color: black;
 }
 
-h1, h2, h3, h4{
-  line-height: 1.4;
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
 }
-
 h1 {
-  font-size:  2.75em;
-  font-weight: 700;
-
-}
-
-h2{
   font-size: 2.25em;
   font-weight: 700;
 }
-h3{
+h2 {
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 500;
 }
 
-h4{
-  font-size: 1.35em;
-  font-weight: 400;
-}
+/*images*/
 img {
   width: 100%;
 }
 
+/*links*/
 a {
-  color: black;
-  size: 2.25em;
-  text-decoration: none; /* No underlining */
+  color: #0066FF;
+  text-decoration: none;
 }
-a:hover {
-  color:  #007AFF;
-  text-decoration: underline; /* Underlining when hovering over a link */
+a:visited {
+  color: #0066FF;
 }
+a:hover,
+a:focus {
+  color: #007AFF;
+  text-decoration: none;
+}
+
+a:active {
+  /* selected link */
+  color: grey;
+}
+
+
+
+
+img {
+  width: 100%;
+}
+
+
+/*buttons*/
+
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -52,9 +77,11 @@ a:hover {
   color: white; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
+  margin: 10px;
   border-radius: 10px;
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
+
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
@@ -75,62 +102,202 @@ a:hover {
 .social {
 padding: 20px;
 display: inline-block;
+width: 100px;
 }
 
 .social:hover{
   opacity: 0.5;
 }
 
-#contact {
-  text-align: center;
-}
-#contact h3{
-    font-weight: 700;
-
-}
-#contact p{
-  padding: 25px;
-  font-size: 0.75em;
-}
-#hero {
-  text-align: center;
-}
+/* Layout styling */
+/* header styling */
 
 
-#hero h2{
-  text-align: center;
-  font-weight: 400;
-}
-
-#hero {
-  padding: 30px 0;
-  display: inline-block;
+header {
+  position: relative;
   width: 100%;
-}
+  background-color: #D7E3F4;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  padding: 10px 0 0;
 
-#work {
-  font-weight: 700;
-  color: grey;}
+
+}
 
 
 .container {
   padding: 0 15px;
 }
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  margin: 25px 15px; /* 25 px top and bottom, 15 left and right */
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+
+.logo {
+  max-width: 50px;
+  margin-top: 15px;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+
+
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: black;
+}
+nav > ul > li > a:active {
+  color: #7bc96b;
+}
+
+/*main styling (start main section below header)*/
+main {
+  padding-top: 98px;
+}
+/* hero styling*/
+#hero {
+  background-color: #D7E3F4;
+  padding: 20px 0;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+#hero h1 {
+  text-align: center;
+  margin: 0;
+}
+#hero h2 {
+  text-align: center;
+  margin: 15px 0;
+}
+#hero p {
+  text-align: center;
+}
+
+/* footer styling */
+#contact h2 {
+  text-align: center;
+  font-size: 20px;
+
+}
+#contact p {
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+}
+#work h2 {
+  text-align: center;
+}
+footer p {
+  margin-bottom: 10px;
+}
+.centerMe {
+  text-align: center;
+}
+.linkedin {
+  width: 50%;
+  float: right;
+  text-align: left;
+  padding-left: 10px;
+}
+.behance {
+  width: 50%;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+}
+.socialmedia::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.social {
+  max-width: 55px;
+  text-align: center;
+}
+
+/* about page styling */
+.aboutme h2 {
+  text-align: center;
+}
+.abouttitle {
+  text-align: center;
+  padding: px 10;
+  display: inline-block;
+  width: 100%;
+}
+
+/* OLD DRAFT*/
+
+
+
+.navigation {
+  display: inline-block;
+  width: 100%;
+}
+
+.putf.intro {
+  text-align: center;
+  padding: 0px 15px 5px 15px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  width: 100%;
+}
 
 
 
 
-nav>ul>li {
+
+
+
+.logo {
+  max-width: 250px;
+  text-align: center;
+}
+
+
+
+.col-sm-6 {
+  width: 50%;
+}
+.col-sm-12 {
+  width: 100%;
+}
+
+
+
+.col-sm-6 {
+  width: 35%;
   display: inline-block;
 }
 
-nav>ul>li>a {
-  padding: 0 25px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.coverpic{
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+
+.col-md-6 {
+   width: 50%;
+   padding-right: 20px;
+ }
+
+ .centerMe {
+  text-align: center;
 }
