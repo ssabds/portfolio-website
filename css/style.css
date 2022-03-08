@@ -279,6 +279,7 @@ footer p {
 
 .col-lg-5{
   width: 100%;
+
 }
 
 
@@ -290,6 +291,7 @@ footer p {
 
 
 
+
 .col-md-6 image {
   width: 35%;
   display: inline-block;
@@ -298,6 +300,8 @@ footer p {
 .col-md-6 {
    width: 50%;
    padding-right: 20px;
+   float: left;
+
  }
 
  .centerMe {
