@@ -201,7 +201,7 @@ main {
 /* hero styling*/
 #hero {
   background-color: #D7E3F4;
-  padding: 10px 0;
+  padding: 10px 10px;
   text-align: center;
   display: inline-block;
   width: 100%;
@@ -303,17 +303,6 @@ footer p {
   width: 100%;
 }
 
-.col-md-6.image {
-  float: left;
-  width: 50%;
-  padding-right: 20px;
-}
-
-.col-md-6 {
-  width: 50%;
-  padding-right: 20px;
-  display: inline-block;
-}
 
 .containerfooter {
   padding: 0 15px;
@@ -323,6 +312,15 @@ footer p {
   text-align: center;
 }
 
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -354,19 +352,11 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
-    float: right;
+
 
   }
 
-  [class*="col-"] {
-    float: left;
-  }
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 
   #about-page h3 {
     margin-top: 0;
@@ -387,7 +377,10 @@ Medium devices (640px and larger)
    text-align: center;
  }
 
+.descWrapper{
+  padding: 10px;
 
+}
 
 /* ==============================
 Large devices (1024px or larger)
@@ -408,15 +401,7 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
-  [class*="col-"] {
-    float: left;
-  }
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 
 }
 
