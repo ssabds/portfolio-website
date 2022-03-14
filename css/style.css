@@ -26,6 +26,8 @@ h1 {
 h2 {
   font-size: 1.75em;
   font-weight: 700;
+  text-align: center;
+
 }
 
 h3 {
@@ -184,7 +186,7 @@ nav>ul>li>a {
   padding: 0 5px;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 24px;
+  font-size: 18px;
   color: black;
 
 }
@@ -373,9 +375,7 @@ Medium devices (640px and larger)
    margin-top: 0;
  }
 
- h2 {
-   text-align: center;
- }
+
 
 .descWrapper{
   padding: 10px;
