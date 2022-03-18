@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CDN code for fontawesome hamburger menu icon -->
+<script src="https://kit.fontawesome.com/24976f2689.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -19,17 +21,18 @@
 
   <header>
     <div class="container">
-      <!-- logo -->
-      <picture class="logo">
-        <img src="./img/logo2.svg" alt="Selwa Abd">
-      </picture>
+   <div class="navtoggle" id="myNavtoggle">
+     <img class="logo" src="img/logo1.svg" alt="Selwa Abd">
       <nav>
         <ul class="navigation">
           <li><a href="about.html">About</a></li>
           <li><a href="index.html">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+        <!-- Hamburger menu icon -->
         </ul>
       </nav>
+    </div>
     </div>
   </header>
   <main class="putf">
@@ -44,7 +47,7 @@
         </div><!-- end intro picture -->
       </div>
 
-      
+
 
       <div id="hero">
         <div class="container">
@@ -179,7 +182,7 @@
     <br>
     <div class="socialmedia">
 
-      <a class="linkedin" href="https://www.linkedin.com/in/selwaabd/"  target="_blank">
+      <a class="linkedin" href="https://www.linkedin.com/in/selwaabd/" target="_blank">
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="36" height="36" rx="7" fill="black" />
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -187,7 +190,7 @@
             fill="white" />
         </svg>
       </a>
-      <a class="behance" href="https://www.behance.net/selwaabde/"  target="_blank">
+      <a class="behance" href="https://www.behance.net/selwaabde/" target="_blank">
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="36" height="36" rx="7" fill="black" />
           <path
@@ -201,6 +204,9 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

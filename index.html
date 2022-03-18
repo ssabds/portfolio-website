@@ -12,25 +12,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CDN code for fontawesome hamburger menu icon -->
+<script src="https://kit.fontawesome.com/24976f2689.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
   <header>
-    <!-- start header section -->
-    <!-- navigation -->
     <div class="container">
-      <!-- logo -->
-      <picture class="logo">
-        <img src="./img/logo2.svg" alt="Selwa Abd">
-      </picture>
+   <div class="navtoggle" id="myNavtoggle">
+     <img class="logo" src="img/logo1.svg" alt="Selwa Abd">
+
       <nav>
         <!-- navigation -->
         <ul class="navigation">
           <li><a href="about.html">About</a></li>
           <li><a href="index.html">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+        <!-- Hamburger menu icon -->
         </ul>
       </nav>
+    </div>
     </div>
   </header> <!-- end header section -->
   <main>
@@ -122,7 +125,7 @@
             <!--<a href="putf.html" target="_blank"> -->
 
 
-            <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                 <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917"></polygon>
               </defs>
@@ -1457,8 +1460,9 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
-
 </body>
 
 </html>
