@@ -228,6 +228,15 @@ main {
 
 #hero {
   background-color: #efefef;
+  padding: 5.67em;
+  padding-bottom: 2em;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#hero-about {
+  background-color: #efefef;
   padding: 3.67em;
   padding-bottom: 2em;
   text-align: center;
