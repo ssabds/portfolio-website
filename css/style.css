@@ -65,8 +65,6 @@ a:active {
   color: grey;
 }
 
-
-
 /*buttons*/
 .button {
   display: inline-block;
@@ -111,9 +109,8 @@ a:active {
   opacity: 0.5;
 }
 
-
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -128,8 +125,8 @@ a:active {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
-/*  Navigation bar  */
 
+/*  Navigation bar  */
 .logo {
   max-width: 65px;
 }
@@ -145,14 +142,13 @@ header {
   display: inline-block;
 }
 
-
- nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li >a {
+nav>ul>li>a {
   list-style-type: none;
   padding: 0 15px;
   font-family: 'Open Sans', sans-serif;
@@ -161,7 +157,6 @@ nav > ul > li >a {
   text-transform: uppercase;
 }
 
-
 nav>ul>li>a:visited {
   text-decoration: none;
   color: grey;
@@ -169,29 +164,20 @@ nav>ul>li>a:visited {
 
 nav>ul>li>a:hover {
   color: #000000;
-  font-style: bold;
   font-weight: 600;
   text-decoration: none;
 }
 
 nav>ul>li>a:active {
-  font-style: bold;
   padding: 0.1em 0.2em;
   text-decoration: none;
   padding-bottom: 10px;
-
 }
-
-
-
-
 
 .navtoggle li:not(:last-child) {
   display: none;
-   padding: 0 0 10px;
+  padding: 0 0 10px;
 }
-
-
 
 .navtoggle,
 .navtoggle.responsive {
@@ -207,7 +193,6 @@ nav>ul>li>a:active {
   color: #000000;
 }
 
-
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
@@ -218,35 +203,94 @@ nav>ul>li>a:active {
   border-top: 2px solid grey;
 }
 
-
-
-
 main {
   padding-top: 56px;
-
 }
 
 #hero {
   background-color: #efefef;
   padding: 5.67em;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
   text-align: center;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 30px;
+
 }
 
 #hero-about {
   background-color: #efefef;
-  padding: 3.67em;
-  padding-bottom: 2em;
+  padding: 2.67em;
+  padding-bottom: 3em;
+  padding-top: 3em;
+  margin-bottom: 1em;
   text-align: center;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 30px;
+
+
+}
+
+#hero-problem {
+  background-color: #efefef;
+  padding: 2.67em;
+  padding-bottom: 3em;
+  padding-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 100%;
+  border-radius: 30px;
+
+}
+
+#hero-competitive {
+  background-color: #efefef;
+  padding: 2.67em;
+  padding-bottom: 3em;
+  padding-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 100%;
+  border-radius: 30px;
+
+}
+
+#hero-flow {
+  background-color: #efefef;
+  padding: 2.67em;
+  padding-bottom: 3em;
+  padding-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 100%;
+  border-radius: 30px;
+
+}
+
+#hero-mid {
+  background-color: #efefef;
+  padding: 2.67em;
+  padding-bottom: 3em;
+  padding-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 100%;
+  border-radius: 30px;
+
+}
+
+#hero-final {
+  background-color: #efefef;
+  padding: 2.67em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 100%;
+  border-radius: 30px;
 }
 
 #hero h1 {
   text-align: center;
-  margin: 0;
 }
 
 #hero h2 {
@@ -314,16 +358,14 @@ footer p {
 
 .abouttitle {
   text-align: center;
-  padding: px 10;
+  padding: 0 10px;
   display: inline-block;
   width: 100%;
 }
 
-
-
 .putf.intro {
   text-align: center;
-  padding: 0px 15px 5px 15px;
+  padding: 70px 15px 5px 15px;
   background-color: black;
   color: white;
   display: inline-block;
@@ -333,8 +375,6 @@ footer p {
 .containerfooter {
   padding: 0 15px;
 }
-
-
 
 [class*="col-"] {
   float: left;
@@ -350,11 +390,7 @@ footer p {
 Small devices (smaller than 640px)
 ================================= */
 /*----Media queries-----------*/
-@media only screen and (max-width: 640px) {
-}
-
-
-
+@media only screen and (max-width: 640px) {}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -371,25 +407,28 @@ Medium devices (640px and larger)
     margin-top: 3px;
   }
 
-  nav > ul {
-       margin: 1em 0;
-   }
+  nav>ul {
+    margin: 1em 0;
+  }
 
-   nav > ul > li {
-           display: inline-block;
-       }
+  nav>ul>li {
+    display: inline-block;
+  }
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-       .navtoggle li:not(:last-child) {
-         display: inline-block;
-       }
-
-       .navtoggle li:last-child {
-         display: none;
-       }
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   main {
     padding-top: 30px;
+  }
+
+  .putf {
+    padding-top: 90px;
   }
 
   body {
@@ -417,17 +456,13 @@ Medium devices (640px and larger)
   height: auto;
 }
 
-
-
 .descWrapper {
   padding: 10px;
 }
 
-.logo{
+.logo {
   min-width: 150px;
 }
-
-
 
 /* ==============================
 Large devices (1024px or larger)
@@ -448,17 +483,14 @@ Large devices (1024px or larger)
   }
 }
 
-.logo{
+.logo {
   min-width: 150px;
 }
-
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-
-}
+@media only screen and (min-width: 1440px) {}
 
 @keyframes color-change {
   from {

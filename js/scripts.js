@@ -1,14 +1,12 @@
-console.log("Welcome To My Portfolio")
+console.log('Welcome To My Portfolio')
 
-$('#heading-text').text('How to create a hamburger menu with jQuery');
-
-function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
-	var isMobileBreakpoint = window.innerWidth <= 641
+function menuToggle () {
+  var x = document.getElementById('myNavtoggle')
+  var isMobileBreakpoint = window.innerWidth <= 641
 
   if (x.className === 'navtoggle' && isMobileBreakpoint) {
-    x.className += ' responsive';
+    x.className += ' responsive'
   } else {
-    x.className = 'navtoggle';
+    x.className = 'navtoggle'
   }
 }
