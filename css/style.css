@@ -97,13 +97,13 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #007AFF;
+  color: #0072EF;
   text-transform: uppercase;
-  border: 2px solid #007AFF;
+  border: 2px solid #0072EF;
 }
 
 .button.contact:hover {
-  background-color: #007AFF;
+  background-color: #0072EF;
   color: #ffffff;
 }
 
