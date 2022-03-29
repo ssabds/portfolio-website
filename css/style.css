@@ -410,6 +410,16 @@ Small devices (smaller than 640px)
     line-height: 1.4;
     color: black;
   }
+  h1 {
+    font-size: 1.7em;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+  }
 }
 
 /* ==============================
