@@ -404,7 +404,13 @@ background: transparent;
 Small devices (smaller than 640px)
 ================================= */
 /*----Media queries-----------*/
-@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 640px) {
+  body {
+    font-size: 16px;
+    line-height: 1.4;
+    color: black;
+  }
+}
 
 /* ==============================
 Medium devices (640px and larger)
